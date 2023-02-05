@@ -15,15 +15,15 @@ let buttonMessage= {
 'mediaUrl': 'https://chat.whatsapp.com/CEYmCcV6UgO19tO3n56VOx',
 'mediaType': 2,
 'previewType': 'pdf',
-'title': 'Bot promocional del proyecto 🌎ANI MX SCANS🌏 ⁩',
-'body': '🌎ANI MX SCANS🌏',
+'title': 'Группа бота ꧁༺JoKeR༻꧂ ⁩',
+'body': '꧁༺JoKeR༻꧂',
 'thumbnail': imagen1,
 'sourceUrl': 'https://chat.whatsapp.com/CEYmCcV6UgO19tO3n56VOx' }},
 'caption': texto,
 'footer': wm,
 'buttons':[
-{buttonId: `${usedPrefix}menu`, buttonText: {displayText: 'MENU'}, type: 1}, 
-{buttonId: `${usedPrefix}donar`, buttonText: {displayText: 'DONAR'}, type: 1}],
+{buttonId: `${usedPrefix}меню`, buttonText: {displayText: 'МЕНЮ'}, type: 1}, 
+{buttonId: `${usedPrefix}donar`, buttonText: {displayText: 'ДОНАТ'}, type: 1}],
 'headerType': 6 }
 conn.sendMessage(m.chat, buttonMessage, { quoted: m })}
 handler.command = ['sc','script']

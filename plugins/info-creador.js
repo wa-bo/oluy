@@ -17,7 +17,7 @@ let buttonMessage= {
 'mediaUrl': 'https://chat.whatsapp.com/CEYmCcV6UgO19tO3n56VOx',
 'mediaType': 2,
 'previewType': 'pdf',
-'title': 'Bot promocional del proyecto 🌎ANI MX SCANS🌏 ⁩',
+'title': 'ГРУППА БОТА 🌎ANI MX SCANS🌏 ⁩',
 'body': '🌎ANI MX SCANS🌏',
 'thumbnail': imagen1,
 'sourceUrl': 'https://chat.whatsapp.com/CEYmCcV6UgO19tO3n56VOx' }},
