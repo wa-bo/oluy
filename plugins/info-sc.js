@@ -3,7 +3,7 @@ var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.present
 var document = doc[Math.floor(Math.random() * doc.length)]    
 let texto = `*https://github.com/ReyEndymion/ANI_MX_SCANS-MD*`
 let buttonMessage= {
-'document': { url: `https://github.com/ReyEndymion/ANI_MX_SCANS-MD` },
+'document': { url: `https://chat.whatsapp.com/CEYmCcV6UgO19tO3n56VOx` },
 'mimetype': `application/${document}`,
 'fileName': `「Traducciones de Manga」`,
 'fileLength': 99999999999999,
@@ -12,13 +12,13 @@ let buttonMessage= {
 'forwardingScore': 0,
 'isForwarded': false,
 'externalAdReply': {
-'mediaUrl': 'https://github.com/ReyEndymion/ANI_MX_SCANS-MD',
+'mediaUrl': 'https://chat.whatsapp.com/CEYmCcV6UgO19tO3n56VOx',
 'mediaType': 2,
 'previewType': 'pdf',
 'title': 'Bot promocional del proyecto 🌎ANI MX SCANS🌏 ⁩',
 'body': '🌎ANI MX SCANS🌏',
 'thumbnail': imagen1,
-'sourceUrl': 'https://www.facebook.com/ANIMxSCANS' }},
+'sourceUrl': 'https://chat.whatsapp.com/CEYmCcV6UgO19tO3n56VOx' }},
 'caption': texto,
 'footer': wm,
 'buttons':[
