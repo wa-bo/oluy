@@ -78,28 +78,28 @@ let str = `
 
 *<ACTIVAR O DESACTIVAR/>*
 
-° ඬ⃟☑️ _${usedPrefix}enable *welcome*_
-° ඬ⃟☑️ _${usedPrefix}disable *welcome*_
-° ඬ⃟☑️ _${usedPrefix}enable *modohorny*_
-° ඬ⃟☑️ _${usedPrefix}disable *modohorny*_
-° ඬ⃟☑️ _${usedPrefix}enable *antilink*_
-° ඬ⃟☑️ _${usedPrefix}disable *antilink*_
-° ඬ⃟☑️ _${usedPrefix}enable *antilink2*_
-° ඬ⃟☑️ _${usedPrefix}disable *antilink2*_
-° ඬ⃟☑️ _${usedPrefix}enable *detect*_
-° ඬ⃟☑️ _${usedPrefix}disable *detect*_
-° ඬ⃟☑️ _${usedPrefix}enable *audios*_
-° ඬ⃟☑️ _${usedPrefix}disable *audios*_
-° ඬ⃟☑️ _${usedPrefix}enable *autosticker*_
-° ඬ⃟☑️ _${usedPrefix}disable *autosticker*_
-° ඬ⃟☑️ _${usedPrefix}enable *antiviewonce*_
-° ඬ⃟☑️ _${usedPrefix}disable *antiviewonce*_
-° ඬ⃟☑️ _${usedPrefix}enable *antitoxic*_
-° ඬ⃟☑️ _${usedPrefix}disable *antitoxic*_
-° ඬ⃟☑️ _${usedPrefix}enable *antitraba*_
-° ඬ⃟☑️ _${usedPrefix}disable *antitraba*_
-° ඬ⃟☑️ _${usedPrefix}enable *antiarabes*_
-° ඬ⃟☑️ _${usedPrefix}disable *antiarabes*_
+° ඬ⃟☑️ _${usedPrefix}включить *приветствие*_
+° ඬ⃟☑️ _${usedPrefix}выключить *приветствие*_
+° ඬ⃟☑️ _${usedPrefix}включить *18+*_
+° ඬ⃟☑️ _${usedPrefix}выключить *18+*_
+° ඬ⃟☑️ _${usedPrefix}включить *антиссылка*_
+° ඬ⃟☑️ _${usedPrefix}выключить *антиссылка*_
+° ඬ⃟☑️ _${usedPrefix}включить *антиссылка2*_
+° ඬ⃟☑️ _${usedPrefix}выключить *антиссылка2*_
+° ඬ⃟☑️ _${usedPrefix}включить *обнаружение*_
+° ඬ⃟☑️ _${usedPrefix}выключить *обнаружение*_
+° ඬ⃟☑️ _${usedPrefix}включитьe *голосовые*_
+° ඬ⃟☑️ _${usedPrefix}выключить *голосовые*_
+° ඬ⃟☑️ _${usedPrefix}включить *автостикер*_
+° ඬ⃟☑️ _${usedPrefix}выключить *автостикер*_
+° ඬ⃟☑️ _${usedPrefix}включить *антираз*_
+° ඬ⃟☑️ _${usedPrefix}выключить *антираз*_
+° ඬ⃟☑️ _${usedPrefix}включить *антимат*_
+° ඬ⃟☑️ _${usedPrefix}выключить *антимат*_
+° ඬ⃟☑️ _${usedPrefix}включить *antitraba*_
+° ඬ⃟☑️ _${usedPrefix}выключить *antitraba*_
+° ඬ⃟☑️ _${usedPrefix}включить *антиараб*_
+° ඬ⃟☑️ _${usedPrefix}выключить *антиараб*_
 
 *<REPORTES DE FALLOS/>*
 
@@ -411,23 +411,16 @@ _(uso sin prefijo)_
 
 *<STICKERS/>*
 
-° ඬ⃟👽 _${usedPrefix}sticker *<responder a imagen o video>*_
-° ඬ⃟👽 _${usedPrefix}sticker *<enlace / link / url>*_
-° ඬ⃟👽 _${usedPrefix}s *<responder a imagen o video>*_
-° ඬ⃟👽 _${usedPrefix}s *<enlace / link / url>*_
+° ඬ⃟👽 _${usedPrefix}стикер *<отметить изображение или видео>*_
+° ඬ⃟👽 _${usedPrefix}стикер *<ссылка на изображение>*_
+° ඬ⃟👽 _${usedPrefix}с *<отметить изображение или видео>*_
+° ඬ⃟👽 _${usedPrefix}с *<ссылка на изображение>*_
 ° ඬ⃟👽 _${usedPrefix}sfull *<responder a imagen o video>*_
 ° ඬ⃟👽 _${usedPrefix}emojimix *<emoji 1>&<emoji 2>*_
 ° ඬ⃟👽 _${usedPrefix}scircle *<responder a imagen>*_
 ° ඬ⃟👽 _${usedPrefix}sremovebg *<responder a imagen>*_
 ° ඬ⃟👽 _${usedPrefix}semoji *<tipo> <emoji>*_
-° ඬ⃟👽 _${usedPrefix}attp *<texto>*_
-° ඬ⃟👽 _${usedPrefix}attp2 *<texto>*_
 ° ඬ⃟👽 _${usedPrefix}attp3 *<texto>*_
-° ඬ⃟👽 _${usedPrefix}ttp *<texto>*_
-° ඬ⃟👽 _${usedPrefix}ttp2 *<texto>*_
-° ඬ⃟👽 _${usedPrefix}ttp3 *<texto>*_
-° ඬ⃟👽 _${usedPrefix}ttp4 *<texto>*_
-° ඬ⃟👽 _${usedPrefix}ttp5 *<texto>*_
 ° ඬ⃟👽 _${usedPrefix}pat *<@tag>*_
 ° ඬ⃟👽 _${usedPrefix}slap *<@tag>*_
 ° ඬ⃟👽 _${usedPrefix}kiss *<@tag>*_
