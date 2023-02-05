@@ -558,13 +558,12 @@ export async function deleteUpdate(message) {
         if (chat.delete)
             return
         await this.reply(msg.chat, `
-━━━━⬣  *ANTI DELETE*  ⬣━━━━
-*■ Nombre:* @${participant.split`@`[0]}
-*■ Enviando el mensaje..*
-*■ Para desactivar esta función escriba el comando:*
+━━━━⬣  *Анти удаление*  ⬣━━━━
+*■ Номер:* @${participant.split`@`[0]}
+*■ Вы удалили сообщение..*
+*■ Что бы я вас больше не ббеспокоил введите команду:*
 *—◉ #disable antidelete*
-*—◉ #enable delete*
-━━━━⬣  *ANTI DELETE*  ⬣━━━━
+━━━━⬣  *Анти удаление*  ⬣━━━━
 `.trim(), msg, {
             mentions: [participant]
         })
@@ -576,16 +575,16 @@ export async function deleteUpdate(message) {
 
 global.dfail = (type, m, conn) => {
     let msg = {
-    	        rowner: '*[ ⚠️ *ALERTA* ⚠️ ] ESTE COMANDO SOLO PUEDE SER UTILIZADO POR EL/LA PROPIETARIO/A (OWNER) DEL BOT*',
-        owner: '*[ ⚠️ *ALERTA* ⚠️ ] ESTE COMANDO SOLO PUEDE SER UTILIZADO POR EL/LA PROPIETARIO/A (OWNER) DEL BOT*',
-        mods: '*[ ⚠️ *ALERTA* ⚠️ ] ESTE COMANDO SOLO PUEDE SER UTILIZADO POR MODERADORES Y EL/LA PROPIETARIO/A (OWNER) DEL BOT*',
-        premium: '*[ ⚠️ *ALERTA* ⚠️ ] ESTE COMANDO SOLO PUEDE SER UTILIZADO POR USUARIOS PREMIUM Y EL/LA PROPIETARIO/A OWNER DEL BOT*',
-        group: '*[ ⚠️ *ALERTA* ⚠️ ] ESTE COMANDO SOLO PUEDE SER UTILIZADO EN GRUPOS*',
-        private: '*[ ⚠️ ALERTA ⚠️ ] ESTE COMANDO SOLO PUEDE SER UTILIZADO EN CHAT PRIVADO DEL BOT*',
-        admin: '*[ ⚠️ ALERTA ⚠️ ] ESTE COMANDO SOLO PUEDE SER UTILIZADO POR ADMINS DEL GRUPO*',
-        botAdmin: '*[ ⚠️ ALERTA ⚠️ ] PARA PODER USAR ESTE COMANDO ES NECESARIO QUE EL BOT SEA ADMIN, ASCENDER A ADMIN ESTE NUMERO*',
-        unreg: '*[ 🛑 HEY!! ALTO, NO ESTAS REGISTRADO 🛑 ]*\n\n*—◉ PARA USAR ESTE COMANDO DEBES REGISTRARTE, USA EL COMANDO*\n*➣ #verificar*',
-        restrict: '*[ ⚠️ ALERTA ⚠️ ] ESTE COMANDO ESTA RESTRINGIDO/DESACTIVADO POR DESICION DEL PROPIETARIO/A (OWNER) DEL BOT*'
+    	        rowner: '*[ ⚠️ *ВНИМАНИЕ* ⚠️ ] ESTE COMANDO SOLO PUEDE SER UTILIZADO POR EL/LA PROPIETARIO/A (OWNER) DEL BOT*',
+        owner: '*[ ⚠️ *ВНИМАНИЕ* ⚠️ ] РУКИ УБРАЛ С КЛАВИАТУРЫ!КОМАНДА ТОЛЬКО ДЛЯ ВЛАДЕЛЬЦА*',
+        mods: '*[ ⚠️ *ВНИМАНИЕ* ⚠️ ] ESTE COMANDO SOLO PUEDE SER UTILIZADO POR MODERADORES Y EL/LA PROPIETARIO/A (OWNER) DEL BOT*',
+        premium: '*[ ⚠️ *ВНИМАНИЕ* ⚠️ ] КОМАНДА ТОЛЬКО ДЛЯ ПРЕМИУМ ПОЛЬЗОВАТЕЛЕЙ/ОБРАТИТЕСЬ К ZloiAdmiN для решения проблемы)))*',
+        group: '*[ ⚠️ *ВНИМАНИЕ* ⚠️ ] ЭТУ КОМАНДУ ВЫПОЛНЮ ТОЛЬКО В ГРУППЕ*',
+        private: '*[ ⚠️ ВНИМАНИЕ ⚠️ ] ЭТУ КОМАНДУ ВЫПОЛНЮ ТОЛЬКО В ЛИЧКЕ*',
+        admin: '*[ ⚠️ ВНИМАНИЕ ⚠️ ] РУКИ УБРАЛ С КЛАВИАТУРЫ!КОМАНДА ТОЛЬКО ДЛЯ АДМИНОВ*',
+        botAdmin: '*[ ⚠️ ВНИМАНИЕ ⚠️ ] Я МОГУ ВЫПОЛНИТЬ ЭТО ДЕЙСТВИЕ ТОЛЬКО ЕСЛИ ВЫ ДАДИТЕ МНЕ АДМИНКУ)В ПРОТИВНОМ СЛУЧАЕ РАБОТАЙТЕ САМИ*',
+        unreg: '*[ 🛑 ВНИМАНИЕ!! , ВЫ НЕ ЗАРЕГЕСТРИРОВАНЫ 🛑 ]*\n\n*—◉ ЧТО БЫ Я ВЫПОЛНИЛ КОМАНДУ ПРОВЕРЬТЕ ЗАРЕГЕСТРИРОВАНЫ ЛИ ВЫ В МОЕЙ СИСТЕМЕ*\n*➣ #verificar*',
+        restrict: '*[ ⚠️ ВНИМАНИЕ ⚠️ ] Я МОГУ ВЫПОЛНИТЬ ЭТО ДЕЙСТВИЕ ТОЛЬКО ЕСЛИ ВЫ ДАДИТЕ МНЕ АДМИНКУ)В ПРОТИВНОМ СЛУЧАЕ РАБОТАЙТЕ САМИ*'
     }[type]
     if (msg) return m.reply(msg)
 }
