@@ -1,24 +1,24 @@
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
 const sections = [
 {
-title: `*LISTA DE OPCIONES*`,
+title: `*СПИСОК ФУНКЦИЙ*`,
 rows: [
-{title: "✨ | WELCOME", description: "ACTIVA O DESACTIVA LA BIENVENIDA EN EL GRUPO", rowId: `${usedPrefix + command} welcome`},
+{title: "✨ | ПРИВЕТСТВИЕ", description: "ВКЛЮЧЕНИЕ ПРИВЕТСТВИЯ В ГРУППЕ", rowId: `${usedPrefix + command} приветствие`},
 {title: "🌎 | MODO PUBLICO", description: "EL BOT SE VUELVE DE USO PUBLICO Y/O PRIVADO", rowId: `${usedPrefix + command} public`},
-{title: "🥵 | MODO HORNY", description: "ACTIVA O DESACTIVA LOS COMANDOS +18", rowId: `${usedPrefix + command} modohorny`},
-{title: "🔗 | ANTILINK", description: "ACTIVA O DESACTIVA EL ANTI ENLACES DE GRUPOS DE WHATSAPP", rowId: `${usedPrefix + command} antilink`},   
-{title: "🔗 | ANTILINK 2", description: "ACTIVA O DESACTIVA EL ANTI ENLACES QUE INICIAN EN HTTPS", rowId: `${usedPrefix + command} antilink2`},    
-{title: "🔎 | DETECT", description: "ACTIVA O DESACTIVA LAS NOTIFICACIONES DE NUEVA MODIFICACION EN UN GRUPO", rowId: `${usedPrefix + command} detect`},      
-{title: "❗ | RESTRICT", description: "ACTIVA O DESACTIVA LAS RESTRICCIONES PARA SACAR GENTE DE GRUPOS", rowId: `${usedPrefix + command} restrict`},    
+{title: "🥵 | 18+", description: "ВКЛЮЧЕНИЕ КОМАНД +18", rowId: `${usedPrefix + command} 18+`},
+{title: "🔗 | АНТИССЫЛКА", description: "ВКЛЮЧЕНИЕ БАНА ЗА ССЫЛКИ НА ГРУППЫ ВАТСАП", rowId: `${usedPrefix + command} антиссылка`},   
+{title: "🔗 | АНТИССЫЛКА 2", description: "ВКЛЮЧЕНИЕ БАНА ЗА ЛЮБЫЕ ИНТЕРНЕТ ССЫЛКИ", rowId: `${usedPrefix + command} антиссылка2`},    
+{title: "🔎 | ОБНАРУЖЕНИЕ", description: "ВКЛЮЧЕНИЕ ОБНАРУЖЕНИЯ ЛЮБЫХ ИЗМЕНЕНИЙ В ГРУППЕ", rowId: `${usedPrefix + command} обнаружение`},      
+{title: "❗ | АДМИН", description: "ВКЛЮЧЕНИЕ ФУНКЦИЙ АДМИНИСТРАТОРА У БОТА", rowId: `${usedPrefix + command} ботадмин`},    
 {title: "☑️ | AUTOREAD", description: "MARCA AUTOMATICAMENTE LAS CONVERSACIONES COMO LEIDO", rowId: `${usedPrefix + command} autoread`},
-{title: "🔊 | AUDIOS", description: "ACTIVA O DESACTIVA LOS COMANDOS DE AUDIOS SIN PREFIJO", rowId: `${usedPrefix + command} audios`},
-{title: "👾 | AUTOSTICKER", description: "TODAS LAS IMAGENES, VIDEOS O ENLACES ENVIADOS SE CONVIERTEN EN STICKER", rowId: `${usedPrefix + command} autosticker`},
+{title: "🔊 | ГОЛОСОВЫЕ", description: "ВКЛЮЧЕНИЕ ГОЛОСОВЫХ СООБЩЕНИЙ У БОТА", rowId: `${usedPrefix + command} голосовые`},
+{title: "👾 | АВТОСТИКЕР", description: "ВКЛЮЧЕНИЕ ФУНКЦИИ АВТОМАТИЧЕСКОГО СОЗДАНИЯ СТИКЕРОВ ИЗ МЕДИАФАЙЛОВ", rowId: `${usedPrefix + command} автостикер`},
 {title: "💬 | PCONLY", description: "EL BOT SOLO RESPONDERA A LOS COMANDOS SI ES UN CHAT PRIVADO", rowId: `${usedPrefix + command} pconly`},
 {title: "🏢 | GCONLY", description: "EL BOT SOLO RESPONDERA A LOS COMANDOS SI ES UN GRUPO", rowId: `${usedPrefix + command} gconly`},
-{title: "❌ | ANTIVIEWONCE", description: "ACTIVA O DESACTIVA EL ANTI VER UNA SOLA VEZ", rowId: `${usedPrefix + command} antiviewonce`},
-{title: "📵 | ANTILLAMADA", description: "ACTIVA O DESACTIVA EL ANTI LLAMADA", rowId: `${usedPrefix + command} anticall`},
-{title: "💬 | ANTIPRIVADO", description: "EL BOT BLOQUEARA A LOS USUARIOS QUE LE HABLEN AL PRIVADO", rowId: `${usedPrefix + command} antiprivado`},
-{title: "🤬 | ANTITOXIC", description: "ACTIVA O DESACTIVA EL ANTI MALAS PALABRAS", rowId: `${usedPrefix + command} antitoxic`},
+{title: "❌ | АНТИРАЗ", description: "ВКЛЮЧЕНИЕ ФУНКЦИИ АНТИ ОДНОРАЗОВОГО ПРОСМОТРА", rowId: `${usedPrefix + command} антираз`},
+{title: "📵 | АНТИЗВОНОК", description: "ВКЛЮЧИТЬ ФУНКЦИЮ ЗАПРЕТА ЗВОНКОВ", rowId: `${usedPrefix + command} антизвонок`},
+{title: "💬 | АНТИЛИЧКА", description: "ЗАПРЕТ СООБЩЕНИЙ В ЛИЧКУ БОТУ", rowId: `${usedPrefix + command} антиличка`},
+{title: "🤬 | АНТИМАТ", description: "ФУНКЦИЯ УДАЛЕНИЯ ЗА МАТ ИЗ ГРУППЫ", rowId: `${usedPrefix + command} антимат`},
 {title: "🕸️ | ANTITRABAS", description: "ACTIVA O DESACTIVA EL ANTI BINARIOS O TRABAS", rowId: `${usedPrefix + command} antitraba`},
 {title: "🥸 | ASISTENTE", description: "ACTIVA O DESACTIVA EL ASISTENTE DE GRUPOS 🥸", rowId: `${usedPrefix + command} asistente`},
 {title: "🎭 | ASISTENTE GRUPOSROL", description: "ACTIVA O DESACTIVA EL ASISTENTE DE GRUPOS DE ROL", rowId: `${usedPrefix + command} gruposrol`},
@@ -27,47 +27,47 @@ rows: [
 const listMessage = {
 text: ' ',
 footer: `┏━━━━━━━━━━━━━┓
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *welcome*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *welcome*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *public*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *public*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *modohorny*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *modohorny*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *antilink*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *antilink*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *antilink2*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *antilink2*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *detect*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *detect*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *restrict*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *restrict*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *pconly*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *pconly*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *gconly*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *gconly*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *autoread*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *autoread*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *audios*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *audios*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *antiviewonce*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *antiviewonce*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *autosticker*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *autosticker*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *anticall*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *anticall*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *antiprivado*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *antiprivado*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *antitoxic*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *antitoxic*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *antitraba*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *antitraba*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *asistente*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *asistente*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *gruposrol*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *gruposrol*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *приветствие*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *приветствие*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *public*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *public*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *18+*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *18+*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *антиссылка*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *антиссылка*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *антиссылка2*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *антиссылка2*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *обнаружение*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *обнаружение*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *ботадмин*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *ботадмин*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *pconly*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *pconly*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *gconly*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *gconly*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *autoread*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *autoread*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *голосовые*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *голосовые*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *антираз*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *антираз*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *автостикер*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *автостикер*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *антизвонок*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *антизвонок*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *антиличка*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *антиличка*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *антимат*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *антимат*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *antitraba*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *antitraba*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *asistente*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *asistente*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *gruposrol*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *gruposrol*_
 ┗━━━━━━━━━━━━━┛`,
 title: null,
-buttonText: "*SELECCIONE AQUÍ*",
+buttonText: "*ВЫБРАТЬ КОМАНДУ*",
 sections }
 
 let isEnable = /true|enable|(turn)?on|1/i.test(command)
@@ -77,7 +77,7 @@ let bot = global.db.data.settings[conn.user.jid] || {}
 let type = (args[0] || '').toLowerCase()
 let isAll = false, isUser = false
 switch (type) {
-case 'welcome':
+case 'приветствие':
 if (!m.isGroup) {
 if (!isOwner) {
 global.dfail('group', m, conn)
@@ -89,7 +89,7 @@ throw false
 }
 chat.welcome = isEnable
 break
-case 'detect':
+case 'обнаружение':
 if (!m.isGroup) {
 if (!isOwner) {
 global.dfail('group', m, conn)
@@ -101,7 +101,7 @@ throw false
 }
 chat.detect = isEnable
 break
-case 'delete':
+case 'удалить':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -109,7 +109,7 @@ throw false
 }}
 chat.delete = isEnable
 break
-case 'antidelete':
+case 'антиудаление':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -117,7 +117,7 @@ throw false
 }}
 chat.delete = !isEnable
 break
-case 'public':
+case 'вгруппе':
 isAll = true
 if (!isROwner) {
 global.dfail('rowner', m, conn)
@@ -125,7 +125,7 @@ throw false
 }
 global.opts['self'] = !isEnable
 break
-case 'antilink':
+case 'антиссылка':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -133,7 +133,7 @@ throw false
 }}
 chat.antiLink = isEnable
 break
-case 'antilink2':
+case 'антиссылка2':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -141,7 +141,7 @@ throw false
 }}
 chat.antiLink2 = isEnable 
 break
-case 'antiviewonce':
+case 'антираз':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -149,7 +149,7 @@ throw false
 }}
 chat.antiviewonce = isEnable 
 break
-case 'modohorny':
+case '18+':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -157,7 +157,7 @@ throw false
 }}
 chat.modohorny = isEnable          
 break
-case 'autosticker':
+case 'автостикер':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -165,7 +165,7 @@ throw false
 }}
 chat.autosticker = isEnable          
 break
-case 'audios':
+case 'голосовые':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -173,7 +173,7 @@ throw false
 }}
 chat.audios = isEnable          
 break
-case 'restrict':
+case 'ботадмин':
 isAll = true
 if (!isOwner) {
 global.dfail('owner', m, conn)
@@ -224,7 +224,7 @@ throw false
 }
 global.opts['swonly'] = isEnable
 break
-case 'anticall':
+case 'антизвонок':
 isAll = true
 if (!isROwner) {
 global.dfail('rowner', m, conn)
@@ -232,7 +232,7 @@ throw false
 }
 bot.antiCall = isEnable
 break
-case 'antiprivado':
+case 'антиличка':
 isAll = true
 if (!isROwner) {
 global.dfail('rowner', m, conn)
@@ -240,7 +240,7 @@ throw false
 }
 bot.antiPrivate = isEnable
 break
-case 'antitoxic':
+case 'антимат':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -276,10 +276,10 @@ default:
 if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage)
 throw false
 }
-conn.sendButton(m.chat, `🗂️ OPCIÓN: ${type} 
-🎚️ ESTADO: ${isEnable ? '𝙰𝙲𝚃𝙸𝚅𝙰𝙳𝙾' : '𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝙳𝙾'}
-📣 PARA: ${isAll ? '𝙴𝚂𝚃𝙴 𝙱𝙾𝚃' : isUser ? '' : '𝙴𝚂𝚃𝙴 𝙲𝙷𝙰𝚃'}`, author, null, [[`${isEnable ? '✖️ 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝚁 ✖️' : '✔️ 𝙰𝙲𝚃𝙸𝚅𝙰𝚁 ✔️'}`, `${isEnable ? `#disable ${type}` : `#enable ${type}`}`], ['👾 𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻 👾', '#menu']], m)}
-handler.help = ['en', 'dis'].map(v => v + 'able <option>')
+conn.sendButton(m.chat, `🗂️ ФУНКЦИЯ: ${type} 
+🎚️ ESTADO: ${isEnable ? 'ВКЛЮЧЕНА' : 'ВЫКЛЮЧЕНА'}
+📣 PARA: ${isAll ? 'ДЛЯ БОТА' : isUser ? '' : 'ДЛЯ ГРУППЫ'}`, author, null, [[`${isEnable ? '✖️ ВЫКЛЮЧЕНА ✖️' : '✔️ ВЫКЛЮЧЕНА ✔️'}`, `${isEnable ? `#выключить ${type}` : `#включить ${type}`}`], ['👾 ГЛАВНОЕ МЕНЮ 👾', '#меню']], m)}
+handler.help = ['вкл', 'выкл'].map(v => v + 'ючить <option>')
 handler.tags = ['group', 'owner']
-handler.command = /^((en|dis)able|(tru|fals)e|(turn)?[01])$/i
+handler.command = /^((вкл|выкл)ючить|(tru|fals)e|(turn)?[01])$/i
 export default handler
