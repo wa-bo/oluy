@@ -477,9 +477,8 @@ _(uso sin prefijo)_
 let mentionedJid = [who]
 conn.sendButton(m.chat, str, wm, pp, 
 /*conn.sendHydrated2(m.chat, str, wm, pp, 'https://www.facebook.com/ANIMxSCANS', 'FACEBOOK', 'https://github.com/ReyEndymion/ANI_MX_SCANS-MD', 'GITHUB', */[
-['📮 DONAR 📮', '/donasi'],
-['🌹 OWNER 🌹', '/owner'],
-['🐾 INFOBOT 🐾', '/infobot']
+['🌹 ВЛАДЕЛЕЦ 🌹', '/owner'],
+['🐾 ИНФО О БОТЕ 🐾', '/infobot']
 ], '', { contextInfo: { mentionedJid }})
 /*await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, {
 type: 'audioMessage', 
@@ -488,7 +487,7 @@ ptt: true})*/
 conn.reply(m.chat, '*[❗INFO❗] EL MENU TIENE UN ERROR Y NO FUE POSIBLE ENVIARLO, REPORTELO AL PROPIETARIO DEL BOT*', m)
 throw e
 }}
-handler.command = /^(menu|menú|memu|memú|help|info|comandos|allmenu|2help|menu1.2|ayuda|commands|commandos|cmd)$/i
+handler.command = /^(меню|menú|memu|memú|help|info|comandos|allmenu|2help|menu1.2|ayuda|commands|commandos|cmd)$/i
 handler.exp = 50
 handler.fail = null
 export default handler

@@ -136,10 +136,10 @@ conn.ev.off('connection.update', conn.connectionUpdate)
 conn.ev.off('creds.update', conn.credsUpdate)
 }
   
-conn.welcome = '*╔══════════════*\n*╟❧ @subject*\n*╠══════════════*\n*╟❧ @user*\n*╟❧ BIENVENIDO/A* \n*║*\n*╟❧ DESCRIPCIÓN DEL GRUPO:*\n*╟❧* @desc\n*║*\n*╟❧ DISFRUTA TU ESTANCIA!!*\n*╚══════════════*'
-  conn.bye = '╔══════════════*\n*║〘 *ADIÓS* 〙*\n*╠══════════════*\n║*_☠ Se fue @user_*\n║*_Si no regresa..._*\n║ *_Nadie l@ va a extrañar 😇👍🏼_*\n*╚══════════════*'
-  conn.spromote = '*@user SE SUMA AL GRUPO DE ADMINS!!*'
-  conn.sdemote = '*@user ABANDONA EL GRUPO DE ADMINS !!*'
+conn.welcome = '*╔══════════════*\n*╟❧ @subject*\n*╠══════════════*\n*╟❧ @user*\n*╟❧ Добро пожаловать в группу)* \n*║*\n*╟❧ Правила группы:*\n*╟❧* @desc\n*║*\n*╟❧ Читай правила и давай знакомиться!!*\n*╚══════════════*'
+  conn.bye = '╔══════════════*\n*║〘 *Всего доброго и не очень!* 〙*\n*╠══════════════*\n║*_☠ Нас покинул @user_*\n║*_Можешь не возвращаться..._*\n║ *_Всего доброго!)Ну и фирменный пинок от Джокера в догонку))) 😇👍🏼_*\n*╚══════════════*'
+  conn.spromote = '*@user Назначен администратором группы)Поздравим участника)!!*'
+  conn.sdemote = '*@user Больше не является админом !!*'
   conn.sDesc = '*SE HA MODIFICADO LA DESCRIPCIÓN DEL GRUPO*\n\n*NUEVA DESCRIPCIÓN:* @desc'
   conn.sSubject = '*SE HA MODIFICADO EL NOMBRE DEL GRUPO*\n NUEVO NOMBRE:* @subject'
   conn.sIcon = '*SE HA CAMBIADO LA FOTO DEL GRUPO!!*'
