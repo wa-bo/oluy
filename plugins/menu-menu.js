@@ -143,6 +143,7 @@ let str = `
 
 ° ඬ⃟💎 _${usedPrefix}add *<numero>*_
 ° ඬ⃟💎 _${usedPrefix}kick *<@tag>*_
+° ඬ⃟💎 _${usedPrefix}внимание
 ° ඬ⃟💎 _${usedPrefix}grupo *<abrir / cerrar>*_
 ° ඬ⃟💎 _${usedPrefix}promote *<@tag>*_
 ° ඬ⃟💎 _${usedPrefix}demote *<@tag>*_
@@ -158,6 +159,7 @@ let str = `
 ° ඬ⃟💎 _${usedPrefix}hidetag *<texto>*_
 ° ඬ⃟💎 _${usedPrefix}fantasmas_
 ° ඬ⃟💎 _${usedPrefix}destraba_
+
 
 *<CONVERTIDORES/>*
 
