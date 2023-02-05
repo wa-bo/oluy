@@ -487,7 +487,7 @@ export async function participantsUpdate({ id, participants, action }) {
                             let apii = await this.getFile(pp)
                         this.sendButton(id, text, groupMetadata.subject, pp, [
                         [(action == 'add' ? 'ПОГРУСТИТЬ' : 'ADIOS'), (action == 'add' ? '#welcomegc' : '#byegc')],
-                        ['ГЛАВНОЕ МЕНЮ', `#menu`]
+                        ['ГЛАВНОЕ МЕНЮ', `#меню`]
                         ], '',  { mentions: [user]})
                         //this.sendFile(id, pp, 'pp.jpg', text, null, false, { mentions: [user] })
                     }
