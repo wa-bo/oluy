@@ -1,6 +1,6 @@
 
 
-### `—◉ 👾 ACTIVAR EN TERMUX 👾`
+### `—◉ 👾 Установка в термукс 👾`
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd
@@ -12,8 +12,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > pkg install ffmpeg -y
 > pkg install imagemagick -y
 > pkg install yarn
-> git clone https://github.com/ReyEndymion/ANI_MX_SCANS-MD
-> cd ANI_MX_SCANS-MD
+> cd jok
 > yarn install 
 > npm update
 > npm start
@@ -23,7 +22,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
-> cd ANI_MX_SCANS-MD
+> cd jok
 > npm start
 ```
 
@@ -31,7 +30,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
-> cd ANI_MX_SCANS-MD
+> cd jok
 > rm -rf session.data.json
 > npm start
 ```
