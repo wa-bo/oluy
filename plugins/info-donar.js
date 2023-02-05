@@ -7,20 +7,17 @@ let donar =`
 *┏ ┅ ━━━━━━━━━ ┅ ━*
 *┇          「 DONAR 」*
 *┣ ┅ ━━━━━━━━━ ┅ ━*
-*┃ HOLA ${userm} 💙*
+*┃ ПРИВЕТ) ${userm} 💙*
 *┃*
-*┃ 👉🏻 AQUI ALGUNOS DATOS*
-*┃ POR SI GUSTAS APOYAR :𝟹*
+*┃ 👉🏻 ЕСЛИ ТЫ СЮДА ЗАШЕЛ ЗНАЧИТ ХОЧЕШЬ ПОДКИНУТЬ МНЕ НА ШЕСТЕРЕНКИ :𝟹*
 
-*┃ ➤ CONCEPTO: APOYO*  
-*┃ ➤ PAYPAL: paypal.me/AMxScan*
-*┃ 👉🏻 CONTACTAME SI NECESITAS MAS DATOS Y PARA AGRADECERTE <3*
-*┃ wa.me/5215517489568*
+*┃ *┃ 👉🏻 МОЖЕШЬ СМЕЛО ПИСАТЬ СЮДА И ТЕБЕ ВСЕ РАССКАЖУТ <3*
+*┃ wa.me/79524197466*
 *┗ ┅ ━━━━━━━━━ ┅ ━*
 `.trim()
 let mentionedJid = [who]
 conn.sendButton(m.chat, donar, wm,/* 'https://www.paypal.me/AMxScan', 'PAYPAL', null, null, */[['https://www.paypal.me/AMxScan', '/paypal'], 
-['MENU PRINCIPAL', '/menu']],
+['ГЛАВНОЕ МЕНЮ', '/меню']],
  '', { contextInfo: { mentionedJid }})}
 handler.help = ['donasi']
 handler.tags = ['info']

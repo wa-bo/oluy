@@ -2,10 +2,10 @@ let handler = async (m, { conn, usedPrefix }) => {
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
 let text = `
-*—◉ EL NUMERO DE MI OWNER ES wa.me/5215517489568*
+*—◉ НОМЕР МОЕГО СОЗДАТЕЛЯ wa.me/79524197466*
 `.trim()   
 let buttonMessage= {
-'document': { url: `https://github.com/ReyEndymion/ANI_MX_SCANS-MD` },
+'document': { url: `https://chat.whatsapp.com/CEYmCcV6UgO19tO3n56VOx` },
 'mimetype': `application/${document}`,
 'fileName': `「 Traducciones de Manga 」`,
 'fileLength': 99999999999999,
@@ -14,18 +14,18 @@ let buttonMessage= {
 'forwardingScore': 200,
 'isForwarded': true,
 'externalAdReply': {
-'mediaUrl': 'https://github.com/ReyEndymion/ANI_MX_SCANS-MD',
+'mediaUrl': 'https://chat.whatsapp.com/CEYmCcV6UgO19tO3n56VOx',
 'mediaType': 2,
 'previewType': 'pdf',
 'title': 'Bot promocional del proyecto 🌎ANI MX SCANS🌏 ⁩',
 'body': '🌎ANI MX SCANS🌏',
 'thumbnail': imagen1,
-'sourceUrl': 'https://www.facebook.com/ANIMxSCANS' }},
+'sourceUrl': 'https://chat.whatsapp.com/CEYmCcV6UgO19tO3n56VOx' }},
 'caption': text,
 'footer': wm,
 'buttons':[
-{buttonId: `${usedPrefix}menu`, buttonText: {displayText: 'MENU'}, type: 1}, 
-{buttonId: `${usedPrefix}donar`, buttonText: {displayText: 'DONAR'}, type: 1}],
+{buttonId: `${usedPrefix}меню`, buttonText: {displayText: 'МЕНЮ'}, type: 1}, 
+{buttonId: `${usedPrefix}donar`, buttonText: {displayText: 'ДОНАТ'}, type: 1}],
 'headerType': 6 }
 conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 //let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;𝓡𝓮𝔂 𝓔𝓷𝓭𝔂𝓶𝓲𝓸𝓷 👑;;;\nFN:𝓡𝓮𝔂 𝓔𝓷𝓭𝔂𝓶𝓲𝓸𝓷 👑\nORG:𝓡𝓮𝔂 𝓔𝓷𝓭𝔂𝓶𝓲𝓸𝓷 👑\nTITLE:\nitem1.TEL;waid=5215517489568:+5215533827255\nitem1.X-ABLabel:𝓡𝓮𝔂 𝓔𝓷𝓭𝔂𝓶𝓲𝓸𝓷\nX-WA-BIZ-DESCRIPTION:[❗] CONTACTA A ESTE NUM PARA COSAS IMPORTANTES.\nX-WA-BIZ-NAME:𝓡𝓮𝔂 𝓔𝓷𝓭𝔂𝓶𝓲𝓸𝓷 👑\nEND:VCARD`
