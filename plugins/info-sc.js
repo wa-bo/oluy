@@ -7,8 +7,6 @@ let buttonMessage= {
 'isForwarded': false,
 'externalAdReply': {
 'mediaUrl': 'https://chat.whatsapp.com/CEYmCcV6UgO19tO3n56VOx',
-'mediaType': 2,
-'previewType': 'pdf',
 'title': 'Группа бота ꧁༺JoKeR༻꧂ ⁩',
 'body': '꧁༺JoKeR༻꧂',
 'thumbnail': imagen1,
