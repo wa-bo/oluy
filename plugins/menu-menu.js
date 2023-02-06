@@ -141,8 +141,8 @@ let str = `
 
 *<GRUPOS/>* 
 
-° ඬ⃟💎 _${usedPrefix}add *<numero>*_
-° ඬ⃟💎 _${usedPrefix}kick *<@tag>*_
+° ඬ⃟💎 _${usedPrefix}добавить *<numero>*_
+° ඬ⃟💎 _${usedPrefix}снести *<@tag>*_
 ° ඬ⃟💎 _${usedPrefix}внимание
 ° ඬ⃟💎 _${usedPrefix}grupo *<abrir / cerrar>*_
 ° ඬ⃟💎 _${usedPrefix}promote *<@tag>*_

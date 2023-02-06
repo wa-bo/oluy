@@ -36,16 +36,16 @@ try {
         const content = getBinaryNodeChild(user, 'add_request')
         const invite_code = content.attrs.code
         const invite_code_exp = content.attrs.expiration
-        let teks = `*[❗INFO❗] NO FUE POSIBLE AÑADIR EL NUMERO QUE INGRESO, ESTO PUEDE OCURRIR PORQUE EL NUMERO ESTE INCORRECTO, LA PERSONA SE HAYA SALIDO RECIENTEMENTE DEL GRUPO O LA PERSONA HAYA CONFIGURADO SU PRIVACIDAD DE GRUPOS, TE ACONSEJAMOS ENVIALE LA INVITACION MANUALMENTE!!*`
+        let teks = `*[❗ВАЖНО❗] НЕ УДАЛОСЬ ДОБАВИТЬ ВВЕДЕННЫЙ МНОЙ НОМЕР, ЭТО МОЖЕТ ПРОИЗОЙТИ ИЗ-ЗА ТОГО, ЧТО НОМЕР НЕВЕРНЫЙ, ЧЕЛОВЕК НЕДАВНО ПОКИНУЛ ГРУППУ ИЛИ ЧЕЛОВЕК НАСТРОИЛ КОНФИДЕНЦИАЛЬНОСТЬ СВОИХ ГРУПП, МЫ СОВЕТУЕМ ВАМ ОТПРАВИТЬ ЕМУ ПРИГЛАШЕНИЕ ВРУЧНУЮ!!*`
         m.reply(teks, null, {
         mentions: conn.parseMention(teks)
 })}
 } catch (e) {
-throw m.reply('*[❗INFO❗] NO FUE POSIBLE AÑADIR EL NUMERO QUE INGRESO, ESTO PUEDE OCURRIR PORQUE EL NUMERO ESTE INCORRECTO, LA PERSONA SE HAYA SALIDO RECIENTEMENTE DEL GRUPO O LA PERSONA HAYA CONFIGURADO SU PRIVACIDAD DE GRUPOS, TE ACONSEJAMOS ENVIALE LA INVITACION MANUALMENTE!!*')}
+throw m.reply('*[❗INFO❗] НЕ УДАЛОСЬ ДОБАВИТЬ ВВЕДЕННЫЙ МНОЙ НОМЕР, ЭТО МОЖЕТ ПРОИЗОЙТИ ИЗ-ЗА ТОГО, ЧТО НОМЕР НЕВЕРНЫЙ, ЧЕЛОВЕК НЕДАВНО ПОКИНУЛ ГРУППУ ИЛИ ЧЕЛОВЕК НАСТРОИЛ КОНФИДЕНЦИАЛЬНОСТЬ СВОИХ ГРУПП, МЫ СОВЕТУЕМ ВАМ ОТПРАВИТЬ ПРИГЛАШЕНИЕ ВРУЧНУЮ!!*')}
 }
 handler.help = ['add', '+'].map(v => v + ' número')
 handler.tags = ['group']
-handler.command = /^(add|agregar|añadir|\+)$/i
+handler.command = /^(добавить|agregar|añadir|\+)$/i
 handler.group = true
 handler.admin = true
 handler.botAdmin = true

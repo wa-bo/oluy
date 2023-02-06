@@ -1,6 +1,6 @@
 let handler = async (m, { conn, participants, usedPrefix, command }) => {
 if (!global.db.data.settings[conn.user.jid].restrict) throw '*[ ⚠️ ] EL OWNER TIENE RESTRINGIDO (_enable restrict_ / _disable restrict_) EL USO DE ESTE COMANDO*'
-let kicktext = `*[❗] ETIQUETÉ A UNA PERSONA O RESPONDA A UN MENSAJE DEL GRUPO PARA ELIMINAR AL USUARIO*\n\n*—◉ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n*${usedPrefix + command} @${global.suittag}*`
+let kicktext = `*[❗] ОТМЕТТЕ ЧЕЛОВЕКА ЧЕРЕЗ СОБАЧКУ ИЛИ ОТВЕТЬТЕ НА СООБЩЕНИЕ ИЗ ГРУППЫ, ЧТОБЫ УДАЛИТЬ ПОЛЬЗОВАТЕЛЯ*\n\n*—◉ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n*${usedPrefix + command} @${global.suittag}*`
 if (!m.mentionedJid[0] && !m.quoted) return m.reply(kicktext, m.chat, { mentions: conn.parseMention(kicktext)}) 
 let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender
 let owr = m.chat.split`-`[0]
@@ -15,7 +15,7 @@ await delay(1 * 1000)
 }}*/
 handler.help = ['kick @user']
 handler.tags = ['group']
-handler.command = /^(banear|kick|sacar|\-)$/i
+handler.command = /^(banear|снести|sacar|\-)$/i
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
