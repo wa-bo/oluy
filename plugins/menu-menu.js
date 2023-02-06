@@ -147,7 +147,7 @@ let str = `
 ° ඬ⃟💎 _${usedPrefix}grupo *<abrir / cerrar>*_
 ° ඬ⃟💎 _${usedPrefix}promote *<@tag>*_
 ° ඬ⃟💎 _${usedPrefix}demote *<@tag>*_
-° ඬ⃟💎 _admins *<texto>*_ (uso sin prefijo)
+° ඬ⃟💎 _админы *<texto>*_ (uso sin prefijo)
 ° ඬ⃟💎 _${usedPrefix}demote *<@tag>*_
 ° ඬ⃟💎 _${usedPrefix}infogroup_
 ° ඬ⃟💎 _${usedPrefix}link_
