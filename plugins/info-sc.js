@@ -4,10 +4,6 @@ var document = doc[Math.floor(Math.random() * doc.length)]
 let texto = `*https://chat.whatsapp.com/CEYmCcV6UgO19tO3n56VOx*`
 let buttonMessage= {
 'document': { url: `https://chat.whatsapp.com/CEYmCcV6UgO19tO3n56VOx` },
-'mimetype': `application/${document}`,
-'fileName': `「Traducciones de Manga」`,
-'fileLength': 99999999999999,
-'pageCount': 200,
 'contextInfo': {
 'forwardingScore': 0,
 'isForwarded': false,
