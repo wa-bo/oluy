@@ -12,6 +12,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > pkg install ffmpeg -y
 > pkg install imagemagick -y
 > pkg install yarn
+> git clone https://github.com/wa-bo/oleg-bot.git
 > cd jok
 > yarn install 
 > npm update
