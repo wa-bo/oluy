@@ -5,14 +5,14 @@ import fs from 'fs'
 
 
 global.owner = [
-   ['79524197466','꧁༺ZloiAdmiN༻꧂  - Создатель 👁️', true]
+   ['79952800544','OleG  - Создатель 👁️', true]
 ] // Cambia los numeros que quieras
 
 global.prems = [] 
 global.packname = '(☞ﾟ∀ﾟ)☞'
-global.author = '★꧁༺JoKeR༻꧂ ★'
-global.wm = '★꧁༺JoKeR༻꧂ ★'
-global.igfg = '★꧁༺JoKeR༻꧂ ★'
+global.author = '★OleG ★'
+global.wm = '★OleG ★'
+global.igfg = '★OleG ★'
 global.wait = '*⌛ _Минутку ожидания и все будет..._ ▬▬▬▭*'
 global.keysZens = ['fiktod', 'c2459db922', 'BF39D349845E', '675e34de8a', '37CC845916', '0b917b905e6f', '6fb0eff124']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
