@@ -10,24 +10,24 @@ let listSerch = []
 let listSerch2 = []
 let listSerch3 = []
 let listSerch4 = []
-let teskd = `Musica relacionada con: ${args.join(" ")}`
+let teskd = `РЕЗУЛЬТАТЫ ПОИСКА ПО ЗАПРОСУ: ${args.join(" ")}`
 const sections = [{
-title: `|－－－－－{ *AUDIO* }－－－－－|`,
+title: `|－－－－－{ *ПЕСНЯ* }－－－－－|`,
 rows: listSerch },
 {              
-title: `|－－－－－{ *VIDEO* }－－－－－|`,
+title: `|－－－－－{ *КЛИП* }－－－－－|`,
 rows: listSerch2 },
 {              
-title: `|－－{ *DOCUMENTO MP3* }－－|`,
+title: `|－－{ *ДОКУМЕНТ MP3* }－－|`,
 rows: listSerch3 },
 {              
-title: `|－－{ *DOCUMENTO MP4* }－－|`,
+title: `|－－{ *ДОКУМЕНТ MP4* }－－|`,
 rows: listSerch4 }]
 const listMessage = {
 text: teskd,
-footer: 'Elija una opcion y precione Enviar',
-title: " 『 MUSICA RELACIONADA 』",
-buttonText: "[♦ RESULTADOS ♦]",
+footer: 'ВЫБЕРИТЕ ЖЕЛАЕМЫЙ ИЗ СПИСКА',
+title: " 『 ВСЕ НАЙДЕННЫЕ ТРЕКИ ПО ЗАПРОСУ 』",
+buttonText: "[♦ РЕЗУЛЬТАТЫ ♦]",
 sections}
 for (let i of search.all) {
 listSerch.push({title: i.title, description: `Autor: ${i.author.name} / ${i.timestamp}`, rowId: `${usedPrefix}ytmp3 ${i.url}`})
