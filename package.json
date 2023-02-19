@@ -14,16 +14,16 @@
         "test": "node test.js",
         "test2": "nodemon index.js"
     },
-    "homepage": "",
+    "homepage": "https://github.com/wa-bo/oleg-bot",
     "author": {
         "name": "Rey Endymion"
     },
     "repository": {
         "type": "git",
-        "url": "git+.git"
+        "url": "git+https://github.com/wa-bo/oleg-bot.git"
     },
     "bugs": {
-        "url": "/issues"
+        "url": "https://github.com/wa-bo/oleg-bot/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
