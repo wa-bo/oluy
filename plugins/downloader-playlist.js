@@ -30,10 +30,10 @@ title: " 『 ВСЕ НАЙДЕННЫЕ ТРЕКИ ПО ЗАПРОСУ 』",
 buttonText: "[♦ РЕЗУЛЬТАТЫ ♦]",
 sections}
 for (let i of search.all) {
-listSerch.push({title: i.title, description: `Autor: ${i.author.name} / ${i.timestamp}`, rowId: `${usedPrefix}ytmp3 ${i.url}`})
-listSerch2.push({title: i.title, description: `Autor: ${i.author.name} / ${i.timestamp}`, rowId: `${usedPrefix}ytmp4 ${i.url}`})
-listSerch3.push({title: i.title, description: `Autor: ${i.author.name} / ${i.timestamp}`, rowId: `${usedPrefix}ytmp3doc ${i.url}`})
-listSerch4.push({title: i.title, description: `Autor: ${i.author.name} / ${i.timestamp}`, rowId: `${usedPrefix}ytmp4doc ${i.url}`})}
+listSerch.push({title: i.title, description: `Автор: ${i.author.name} / ${i.timestamp}`, rowId: `${usedPrefix}ytmp3 ${i.url}`})
+listSerch2.push({title: i.title, description: `Автор: ${i.author.name} / ${i.timestamp}`, rowId: `${usedPrefix}ytmp4 ${i.url}`})
+listSerch3.push({title: i.title, description: `Автор: ${i.author.name} / ${i.timestamp}`, rowId: `${usedPrefix}ytmp3doc ${i.url}`})
+listSerch4.push({title: i.title, description: `Автор: ${i.author.name} / ${i.timestamp}`, rowId: `${usedPrefix}ytmp4doc ${i.url}`})}
 conn.sendMessage(m.chat, listMessage, { quoted: m })
 } catch (e) {
 m.reply('*[❗INFO❗] ERROR, POR FAVOR VUELVA A INTENTARLO CON OTRO NOMBRE DE UNA CANCION*')
